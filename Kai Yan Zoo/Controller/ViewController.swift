@@ -112,15 +112,15 @@ class ViewController: UIViewController {
         // 設置點擊通知後取得的資訊
         content.userInfo = ["link" : "https://www.google.com/search?q=%E5%8F%B0%E4%B8%AD+%E7%BE%8E%E9%A3%9F&rlz=1C5CHFA_enTW873TW874&oq=%E5%8F%B0%E4%B8%AD+%E7%BE%8E%E9%A3%9F&aqs=chrome..69i57j0l7.9972j0j4&sourceid=chrome&ie=UTF-8"]
         //依時間
-        
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
-        //定時
         /*
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)*/
+        //定時
+        
         var date = DateComponents()
         date.hour = 17
         date.minute = 50
         let trigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: true)
-        */
+        
         let request = UNNotificationRequest(identifier: "notification", content: content, trigger: trigger)
         let center = UNUserNotificationCenter.current()
         center.add(request) { (error) in

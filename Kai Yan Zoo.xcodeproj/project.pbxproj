@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C61B430B243E0F0F00C2059E /* family.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C61B430A243E0F0F00C2059E /* family.jpg */; };
+		C62734C82461BB4C0093162E /* family.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C62734C72461BB4C0093162E /* family.jpg */; };
 		C6AFB1392417C0AF00711716 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AFB1382417C0AF00711716 /* AppDelegate.swift */; };
 		C6AFB13B2417C0AF00711716 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AFB13A2417C0AF00711716 /* SceneDelegate.swift */; };
 		C6AFB13D2417C0AF00711716 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AFB13C2417C0AF00711716 /* ViewController.swift */; };
@@ -24,7 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C61B430A243E0F0F00C2059E /* family.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = family.jpg; sourceTree = "<group>"; };
+		C62734C72461BB4C0093162E /* family.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = family.jpg; sourceTree = "<group>"; };
 		C6AFB1352417C0AF00711716 /* Kai Yan Zoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kai Yan Zoo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6AFB1382417C0AF00711716 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6AFB13A2417C0AF00711716 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +53,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C62734C42461B8BF0093162E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C6AFB13E2417C0AF00711716 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C62734C52461B93E0093162E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C6D7A8982434D21C0064298F /* WebView.swift */,
+				C6D7A89E2434DABA0064298F /* CollectionViewVC.swift */,
+				C6D7A89C2434D5AC0064298F /* CollectionCellVC.swift */,
+				C6AFB13C2417C0AF00711716 /* ViewController.swift */,
+				C6AFB14C2417C10900711716 /* TableCellVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C62734C62461B9710093162E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C6AFB154241A72D300711716 /* Zoo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		C6AFB12C2417C0AF00711716 = {
 			isa = PBXGroup;
 			children = (
@@ -72,17 +100,13 @@
 		C6AFB1372417C0AF00711716 /* Kai Yan Zoo */ = {
 			isa = PBXGroup;
 			children = (
-				C61B430A243E0F0F00C2059E /* family.jpg */,
 				C6AFB1382417C0AF00711716 /* AppDelegate.swift */,
 				C6AFB13A2417C0AF00711716 /* SceneDelegate.swift */,
-				C6AFB13C2417C0AF00711716 /* ViewController.swift */,
-				C6AFB154241A72D300711716 /* Zoo.swift */,
-				C6AFB14C2417C10900711716 /* TableCellVC.swift */,
-				C6D7A8982434D21C0064298F /* WebView.swift */,
-				C6AFB13E2417C0AF00711716 /* Main.storyboard */,
-				C6D7A89E2434DABA0064298F /* CollectionViewVC.swift */,
-				C6D7A89C2434D5AC0064298F /* CollectionCellVC.swift */,
+				C62734C62461B9710093162E /* Model */,
+				C62734C52461B93E0093162E /* Controller */,
+				C62734C42461B8BF0093162E /* View */,
 				C6AFB1412417C0B300711716 /* Assets.xcassets */,
+				C62734C72461BB4C0093162E /* family.jpg */,
 				C6AFB1432417C0B300711716 /* LaunchScreen.storyboard */,
 				C6AFB1462417C0B300711716 /* Info.plist */,
 			);
@@ -155,10 +179,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C61B430B243E0F0F00C2059E /* family.jpg in Resources */,
 				C6AFB1452417C0B300711716 /* LaunchScreen.storyboard in Resources */,
 				C6AFB1422417C0B300711716 /* Assets.xcassets in Resources */,
 				C6AFB1402417C0AF00711716 /* Main.storyboard in Resources */,
+				C62734C82461BB4C0093162E /* family.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
